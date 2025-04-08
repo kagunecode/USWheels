@@ -1,4 +1,4 @@
-import { wheelColors, wheelModels } from "../data/data";
+import { wheelColors, wheelModels } from "../data/data.js";
 
 export function wheelFilters() {
   function createCheckbox(value, fieldName) {
