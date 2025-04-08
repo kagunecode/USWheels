@@ -2,12 +2,14 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    outDir: "public",
-    emptyOutDir: true,
     rollupOptions: {
-      input: "src/main.js",
+      input: {
+        fitment: "src/filters/fitmentFilter.js",
+        wheel: "src/filters/wheelFilters.js",
+      },
       output: {
-        entryFileNames: "filters.js",
+        entryFileNames: "[name].js",
+        dir: "public",
       },
     },
   },
