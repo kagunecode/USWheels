@@ -15,6 +15,7 @@ export function wheelFilters() {
     const span = document.createElement("span");
     span.className = "filter-option-text w-form-label";
     span.textContent = value;
+    a;
 
     label.appendChild(input);
     label.appendChild(span);
@@ -37,3 +38,5 @@ export function wheelFilters() {
     renderFilter("wheelModel", wheelModels, "WheelModel");
   });
 }
+
+wheelFilters();
